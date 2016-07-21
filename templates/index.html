@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TelemteterED</title>
+    <link rel="stylesheet" href="static/css" />
+  </head>
+  <body>
+     
+      <!-- Main Page Content and Sidebar -->
+     {% for video in video %}
+      <div class="row">     
+        <!-- Main Video Content -->
+        <div class="large-9 columns" role="content">     
+          <article>     
+            <h3>{{ video.title }}</h3>          
+     
+            <div class="row">
+              <div class="large-6 columns">
+                <p>{{ video.slide_summary }}</p>
+        <p><a href="{{ url_for('edit', id=video.id) }}">Edit</a></p>
+     
+          </article>
+     
+          <hr />
+     
+       {% endfor %}
+     
+        <!-- End Main Content -->      
+     
+  <script src="static/js/vendor/jquery.js"></script>
+    
+    <script>
+      $(document).ready();
+    </script>
+  
+     </body>
+  </html>   
