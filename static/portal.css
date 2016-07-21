@@ -1,0 +1,187 @@
+html {
+  -webkit-appearance: none;
+  display: inline;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p, h3, h2, h1, a {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h3, h2, h1, p {
+  margin: 5px 0px;
+}
+
+.body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #f0f1f1;
+  margin-top: -10px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  margin:-8.5px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  margin: 0px;
+  z-index: 1;
+}
+
+.navbar ul {
+  margin: auto;
+  width: 960px;
+  list-style-type: none;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.navbar li {
+  float: left;
+  width: 14%;
+}
+
+.navbar li a {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  float: center;
+  font-size: 12pt;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar img {
+  margin: 0px 0px -3px 5px;
+}
+
+.navbar li a:hover {
+  background-color: #fafafa;
+  color: #00ced1;
+} 
+    
+.masthead {
+  background: url(pictures/ReprodPhysCells2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  min-height: 680px;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.overlay{ 
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 100%;
+  height: 1px;
+}
+
+.textoverlay{
+  margin: auto;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 12pt;
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.webrtc_frame {
+  background-color: #ffffff;
+  width: 550px; 
+  float: right; 
+  height: 550px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+.videoContainer {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.videoContainer video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sesson_controll {
+  background-color: #ffffff;
+  float: left;
+  width: 550px;
+  height: 550px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+.controll_buttons {
+  width: 100%;
+  float: center;
+  margin: 0 auto;
+}
+
+button{
+  background-color: #2f4f4f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: #eee;
+  padding: 10px 82px;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  font-size: 18px;
+  margin: 10px 0px;
+  display: block;
+}
+
+input[type=text]{
+  border:1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 236px;
+  
+}
+
+.instructions {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px 40px 10px 10px;
+  clear: both;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  height: 200px;  
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}

@@ -1,12 +1,92 @@
-<form action="" method="post">
-        Title
-        <input type="text" name="title"/>
-        Teacher
-        <input type="text" name="teacher"/>
-        Tean
-        <input type="text" name="class_team"/>
-        Summary
-        <textarea type="text" name="slide_summary"></textarea>
+<link rel="stylesheet" href="static/portal.css" />
+
+<title>Portal</title>
+
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="navbar">
+<ul>
+  <li>
+    <a href="index.html">Home<img src="pictures/glyphicons/png/glyphicons-21-home.png" /></a>
+  </li>
+
+  <li>
+    <a href="about.html">About<img src="pictures/glyphicons/png/glyphicons-196-info-sign.png" /></a>
+  </li>
+
+  <li>
+    <a href="partners.html">Partners<img src="pictures/glyphicons/png/glyphicons-609-newspaper.png" /></a>
+  </li>
+
+  <li>
+    <a href="contact.html">Contact<img src="pictures/glyphicons/png/glyphicons-11-envelope.png" /></a>
+  </li>
+  
+  <li>
+    <a href="workbook.html">Workbook<img src="pictures/glyphicons/png/glyphicons-88-log-book.png" /></a>
+  </li>
+
+  <li>
+    <a href="watch.html">Watch<img src="pictures/glyphicons/png/glyphicons-9-film.png" /></a>
+  </li>
+
+  <li>
+    <a href="portal.html">Portal<img src="pictures/glyphicons/png/glyphicons-45-keys.png" /></a>
+  </li>
+</ul>
+</div>
+
+<div class="masthead">
+
+  <div class="overlay">
+  </div>
+
+<div class="container"> 
+  <div class="textoverlay">
+    <h1>Session Started</h1>
+  </div>
+
+  <div class="sesson_controll">
+  
+    <div class="controll_buttons">
+      <h3>Session Controll Tools</h3>
+      <hr>
+      <button type="button" name="launchUG">Launch Ultragrid</button>
+      <button type="button" name="closeUG">Close Ultragrid</button>
+      <hr><br>
       
- 
-         <button class="button postfix"  type="submit">Add</button>  
+      <form action="" method="get" id="clipform">
+        Clip Name:<br> <input type="text" name="clipname"><br>
+        Team Name:<br> <input type="text" name="teamname"><br>
+        Slide Name:<br> <input type="text" name="slidename"><br>
+        <button type="button" name="startC">Start Clip</button>
+        <button type="button" name="endC">End Clip</button><br>
+        <input type="submit" value="Submit Clip">
+      </form>
+        
+    </div>
+    
+    <div class="controll_log">
+  
+    </div>
+    
+  </div>
+
+  <div class="webrtc_frame">
+    <iframe src="simpleHangoutApp.xml"></iframe>
+  </div>
+  
+  <div class="instructions">
+    <h3>Use Instructions</h3>
+    <hr>
+    
+  </div>
+
+</div>
+</div>
+
+</div>
+</body>
