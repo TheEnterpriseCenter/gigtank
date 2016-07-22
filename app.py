@@ -19,6 +19,22 @@ def index():
 def about():
     return render_template('/about.html')
 
+# @app.route('/portal')
+# def portal():
+#     return render_template('/portal.html')
+
+@app.route('/partners')
+def partners():
+    return render_template('/partners.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('/contact.html')
+
+@app.route('/search', methods=['GET'])
+def search():
+    return render_template('/search.html')
+
 @app.route('/portal', methods=['POST', 'GET'])
 def portal():
     if request.method == 'POST':
