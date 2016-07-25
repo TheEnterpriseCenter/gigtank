@@ -4,6 +4,8 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import os
 import models 
 
+
+
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -31,17 +33,17 @@ def partners():
 def contact():
     return render_template('/contact.html')
 
-@app.route('/search', methods=['GET'])
+@app.route('/search')
 def search():
     return render_template('/search.html')
 
-@app.route('/portal', methods=['POST', 'GET'])
+@app.route('/portal')
 def portal():
-    if request.method == 'POST':
-        video=Video(request.form['title'], request.form['slide_summary'])
-        db.session.add(video)
-        db.session.commit()
-        flash('New entry was successfully posted')     
+    # if request.method == 'POST':
+    #     video=Video(request.form['title'], request.form['slide_summary'])
+    #     db.session.add(video)
+    #     db.session.commit()
+    #     flash('New entry was successfully posted')     
 
     return render_template('/portal.html')
 
