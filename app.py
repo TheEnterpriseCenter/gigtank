@@ -1,4 +1,4 @@
-from flask import render_template, request,flash, redirect, url_for
+from flask import render_template, request, flash, redirect, url_for, redirect
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import os
@@ -33,9 +33,13 @@ def partners():
 def contact():
     return render_template('/contact.html')
 
-@app.route('/search')
+@app.route('/search', methods = ['GET'])
 def search():
     return render_template('/search.html')
+
+@app.route('/workbook')
+def workbook():
+    return render_template('/workbook.html')
 
 @app.route('/portal')
 def portal():
