@@ -24,9 +24,17 @@
 										    
 										<div class="button">
 										<button type="submit">Find</button>
-										<h4>HEy Chris what kind of button do you want</h4>
+										<h4> Chris what kind of button do you want</h4>
 										</div>
 										</form>
+										  <br>
+										<div>
+											<h2>Video data</h2>
+									      {% for video in videos %}
+									        <h4>Title:{{ video }}</h4>
+									      {% endfor %}
+									    <div>
+
 								</div>
 						</div>
 			
@@ -34,3 +42,7 @@
 </div>
 {% endblock %}
 
+<!-- var video = [
+  {"title": "Nature"}, {"title": "Test"}
+  
+]; -->

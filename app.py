@@ -35,6 +35,8 @@ def contact():
 
 @app.route('/search', methods = ['GET'])
 def search():
+    # search = request.form['search']
+    # print("The search videao is '" + search + "'")
     return render_template('/search.html')
 
 @app.route('/workbook')
