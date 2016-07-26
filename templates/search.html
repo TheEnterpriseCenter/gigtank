@@ -1,11 +1,33 @@
-<title>Search</title>
+<link rel="stylesheet" href="static/mainstyle.css" />
+
 {% extends "navbar.html" %}
 {% block content %}
 <div class="wrapper">
-  <div class="masthead">
-      <h1>Search Videos</h1>
+
+<div class="masthead">
   <div class="overlay">
   </div>
+  
+  <div class="textoverlay">
+    <h1>Search</h1>
+  </div>
+
+  <div class="content_area">
+  <div class="content">
+    <form action="/my-handling-form-page" method="get">
+    <div>
+      <input type="text" id="search" name="search" placeholder="Search Here" autocomplete="on" autofocus="autofocus" />
+    </div>
+   
+    
+    <div class="button">
+      <button type="submit">Find</button>
+    </div>
+</form>
+  </div>
+  </div>
+
+</div>
 
 </div>
 {% endblock %}
