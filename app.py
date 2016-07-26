@@ -37,6 +37,10 @@ def contact():
 def search():
     return render_template('/search.html')
 
+@app.route('/workbook')
+def workbook():
+    return render_template('/workbook.html')
+
 @app.route('/portal')
 def portal():
     # if request.method == 'POST':
