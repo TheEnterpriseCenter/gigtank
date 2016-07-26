@@ -1,41 +1,28 @@
 {% extends "navbar.html" %}
 {% block content %}
-<div>
-		
-						
-								<h1>Search</h1>
-					
-	
-						<div class="content_area">
-						<h1>Search</h1>
-								<div>
-										<iframe width="640" height="360" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameborder="0" allowfullscreen></iframe>
-
-
-										
-								</div>
-								<div class="content">
-										<form action="/search" method="GET">
-												<input type="text" name="search" placeholder="Search Videos" autocomplete="on" autofocus="autofocus" />
-
-										    	<input type="submit" value="Search"></input>
-										    
-										<div class="button">
-										<button type="submit">Find</button>
-										<h4> Chris what kind of button do you want</h4>
-										</div>
-										</form>
-										  <br>
-										<div>
-											<h2>Video data</h2>
-									      {% for video in videos %}
-									        <h4>Title:{{ video }}</h4>
-									      {% endfor %}
-									    <div>
-
-								</div>
-						</div>
-			
-		
+<div class="masthead">
+	<div class="top-margin">
+	</div>
+	<div class="contentarea1">
+	<div class="content1">
+		<h2>Search</h2>
+		<div style="display: block; margin: auto;">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/zS9Ajj06Urs" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="content">
+				<form action="/search" method="GET">
+				<input type="text" name="search" placeholder="Search Videos" autocomplete="on" autofocus="autofocus" />
+				<input type="submit" value="Search"></input>
+			</form>
+			<br>
+			<div>
+				<h2>Video data</h2>
+				{% for video in videos %}
+					<h4>Title:{{ video }}</h4>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	</div>	
 </div>
 {% endblock %}
