@@ -2,32 +2,35 @@
 
 {% extends "navbar.html" %}
 {% block content %}
-<div class="wrapper">
+<div>
+		
+						
+								<h1>Search</h1>
+					
+	
+						<div class="content_area">
+						<h1>Search</h1>
+								<div>
+										<iframe width="640" height="360" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameborder="0" allowfullscreen></iframe>
 
-<div class="masthead">
-  <div class="overlay">
-  </div>
-  
-  <div class="textoverlay">
-    <h1>Search</h1>
-  </div>
 
-  <div class="content_area">
-  <div class="content">
-    <form action="/my-handling-form-page" method="get">
-    <div>
-      <input type="text" id="search" name="search" placeholder="Search Here" autocomplete="on" autofocus="autofocus" />
-    </div>
-   
-    
-    <div class="button">
-      <button type="submit">Find</button>
-    </div>
-</form>
-  </div>
-  </div>
+										
+								</div>
+								<div class="content">
+										<form action="/search" method="GET">
+												<input type="text" name="search" placeholder="Search Videos" autocomplete="on" autofocus="autofocus" />
 
-</div>
-
+										    	<input type="submit" value="Search"></input>
+										    
+										<div class="button">
+										<button type="submit">Find</button>
+										<h4>HEy Chris what kind of button do you want</h4>
+										</div>
+										</form>
+								</div>
+						</div>
+			
+		
 </div>
 {% endblock %}
+
