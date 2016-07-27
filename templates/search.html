@@ -17,7 +17,9 @@
 			<br>
 			<div>
 				{% for video in videos %}
-					<h4>Title:{{ video }}</h4>
+					 {% if title %}
+					<h4>Title:{{ title }}</h4>
+					{% endif %}
 				{% endfor %}
 			</div>
 		</div>

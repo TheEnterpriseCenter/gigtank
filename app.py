@@ -2,7 +2,7 @@ from flask import render_template, request, flash, redirect, url_for, redirect
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import os
-import models 
+# import models 
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
@@ -10,6 +10,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 # print(os.environ['APP_SETTINGS'])
 
+from models import *
+import models
 
 @app.route('/')
 def index():
@@ -33,9 +35,10 @@ def contact():
 
 @app.route('/search', methods = ['GET'])
 def search():
-    # search = request.form['search']
+    search = ['search']
     # print("The search videao is '" + search + "'")
     return render_template('/search.html')
+    # return redirect('/search.html')
 
 @app.route('/workbook')
 def workbook():
