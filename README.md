@@ -7,7 +7,7 @@ SETUP- For the initial setup, you should have some familiarity with the followin
 • Node Package Manager - npm • Webpack - http://webpack.github.io/docs/installation.html
 
 Set up a virtual environment - I use autoenv, but it is up to you - 
-The env variables are in the .env file if you set your own. 
+The env variables I use are in the .env file if you set your own. 
 $ virtualenv venv
 
 Activate the env …or deactivate(when done working) 
@@ -33,3 +33,5 @@ add npm - $ npm install
 add Webpack - $ npm install webpack -g
 pip install gunicorn==19.4.5
 
+If you have questions about requirements check the requirements.txt file
+Dont forget to use enviornment variables if you are deployon heroku. 
